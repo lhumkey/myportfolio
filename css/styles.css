@@ -345,7 +345,8 @@ fieldset {
 	nav li a:hover {
 		color: #000;
 		background-color: #fff;
-		transform: scale(1.2);
+		transform: scale(1.1);
+		border-radius: 8px;
 	}
 	
 	/* Desktop Viewport: Style Rules for main content */
