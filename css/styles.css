@@ -1,0 +1,392 @@
+/*
+Author: John Humkey
+Date: 4/27/24
+File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, img, article, section, aside {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rules for header */
+header {
+    background-color: #333;
+    color: #fff; 
+	background-image: linear-gradient(to right, #333, #666);
+    padding: 1em; 
+    font-family: 'Roboto Slab', serif;
+	margin: auto;
+	text-align: center;
+}
+  
+/* Style rules for navigation */
+.mobile-nav a {
+	color: #504ed8;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav {
+    list-style-type: none;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+  
+/* Style rules for main content */
+main {
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+    background-color: #808080;
+    padding: 1.5em 2em 5em 2em;
+	background-image: linear-gradient(to bottom, #808080, #cccccc);
+}
+
+.tel-link {
+	background-color: #333;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+/* Style rules for footer */
+footer {
+    position: relative;
+    background-color: #333; 
+    padding: 20px;
+    color: #fff; 
+    overflow: auto;
+}
+
+.social {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+}
+
+.social img {
+    display: block; 
+    width: 40px; 
+    height: auto;
+    margin-top: 5px; 
+}
+  
+/* Style rules for footer */
+footer .copyright{
+    background-color: #333;
+    text-align: center;
+    padding: 2% 4%;
+	float: left;
+	width: 90%;
+
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style rules for classes */
+.map {
+    border: 3em solid #504ed8;
+}
+
+.action {
+    color: #504ed8;
+}
+  
+/* Image style rules */
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+	position: relative;
+	display: inline-block;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5); 
+	color: white;
+	font-size: 0.90em;
+	padding: 10px;
+}
+  
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+	color: #4645a8;
+}
+
+.map {
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Style Rules for forms */
+#form {
+	margin-top: 2%;
+	background-color: #f2f2f2;
+	padding: 2%;
+}
+
+#form h2 {
+	text-align: center;
+}
+
+fieldset label, input {
+	display: block;
+}
+
+#checkbox fieldset label, input {
+	display: inline;
+}
+
+/* Style Rules for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+th {
+    background-color: #cccccc;
+    font-weight: bold;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #4eb8d8de;
+}
+
+fieldset {
+	margin: 5% auto;
+}
+
+.btn {
+	display: block;
+	margin-left: auto;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	
+	/* Tablet Viewport: Style rule for header */
+	header {
+		width: 100%;
+		padding-bottom: 2%;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #333;
+		font-size: 2em;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a {
+		display: block;
+		color: #504ed8;
+		text-align: center;
+		text-decoration: none;
+		padding: 0.1em 0.75em;
+	}
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+
+	.tel-num {
+		font-size: 1.25em;
+		pointer-events: none;
+	}
+	
+	.map {
+		width: 600px;
+		height: 450px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 15px;
+		width: auto;
+		margin-bottom: 3%;
+	}
+
+	.grid section:nth-child(odd) {
+		background-image: linear-gradient(to top, #4eb8d8de, #cccccc);
+		box-shadow: 5px 5px 8px 2px #000;
+		padding: 1%;
+	}
+	
+	.grid section:nth-child(even) {
+		background-image: linear-gradient(to top, #808080, #cccccc);
+		box-shadow: 5px 5px 8px 2px #000;
+		padding: 1%;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1048px), print {
+	
+	/* Desktop Viewport: Style rule for header */
+	header {
+		padding-bottom: 1%;
+		display:grid;
+		grid-template-columns: auto auto;
+		grid-gap: 2%;
+		place-items: center;
+	}
+	
+	/* Desktop Viewport: Style rules for nav area */
+	nav {
+		width: 100%;
+	}
+	
+	nav ul {
+		text-align: center;
+	}
+	
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #333;
+		font-size: 2em;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+		transform: scale(1.2);
+	}
+	
+	/* Desktop Viewport: Style Rules for main content */
+	main {
+		clear: left;
+		font-size: 2em;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+
+	#education, #work-experience, #computer-skills {
+		font-size: 0.75em;
+	}
+
+	/* Desktop Viewport: Style rules for form elements */
+	form {
+		width: auto;
+		font-size: 0.5em;
+	}
+
+	#form-header h2 {
+		font-size: 0.4em;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	.btn {
+		width: 50%;
+		grid-column: 2 / span 1;
+		margin: 0 auto;
+	}
+
+	fieldset {
+		margin: 0 0;
+	}
+	
+}
+  
