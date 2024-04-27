@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- 
+John Humkey
+contact.html
+04/27/2024
+ -->
+<html lang="en">
+<head>
+	<title>Contact | John Humkey's Portfolio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="You can easily get in touch with me via email at lhumkey0001@kctcs.edu or by giving me a call at (502) 294-6150. 
+		If you prefer, you're welcome to visit me at Elizabethtown Community and Technical College, situated at 600 College Street Rd, Elizabethtown, KY 42701.
+		Alternatively, feel free to fill out the form below to reach out regarding education, job history, availability, or any other inquiries. 
+		Let's connect and explore opportunities together!">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="resume.html">Resum&eacute;</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+	<!-- Use the header area for the website name or logo -->
+	<header>
+		<figure>
+			<img src="images/johnhumkey.jpeg" alt="A picture of John Humkey" class="round">
+			<figcaption class="round">Elevating Code, Forging Futures: Embarking on the Path of Software Development with Passion and Precision</figcaption>
+		</figure>
+		<h1 class="tablet-desktop">John Humkey's Mission: To learn HTML, along with other programming languages, to pursue a career in software development.</h1>
+	</header>
+	
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="tablet-desktop">
+        <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="resume.html">Resum&eacute;</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Use this for contact info and location of educational institution -->
+	<main>
+
+        <article id="contact">
+
+            <h2><span class="action">Contact</span> John Humkey</h2>
+            <h4 class="mobile tel-link"><a href="tel:5022946150">Cell: (502) 294-6150</a></h4>
+			<h4 class="tablet-desktop tel-num">Cell: (502) 294-6150</h4>
+            <h4>Email: <a href="mailto:lhumkey0001@kctcs.edu">lhumkey0001@kctcs.edu</a></h4>
+            <h4>Educational Institution: ECTC 600 College Street Rd, Elizabethtown, KY 42701</h4>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.1310462097126!2d-85.88139292367228!3d37.69312131685866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8868e91d3c6cdafd%3A0x375864ae8908392f!2sElizabethtown%20Community%20and%20Technical%20College!5e0!3m2!1sen!2sus!4v1707364646656!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+		</article>
+
+		<div id="form">
+		
+			<h2 class="form-header">You may also complete the form below to contact me.</h2>
+			
+			<form class="form-grid"> <!-- Start Form -->
+			
+				<fieldset>
+					<legend>Contact information</legend>
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" required>
+					
+					<label for="1Name">Last Name:</label>
+					<input type="text" name="1Name" id="1Name" required>
+
+					<label for="cName">Company:</label>
+					<input type="text" name="cName" id="cName" required>
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+				
+				<fieldset class="checkbox">
+					<legend>Additional Information</legend>
+					<p>I would like more information on your:</p>
+					
+					<label for="edu"><input type="checkbox" name="interest" id="edu" value="Education">Education</label>
+					
+					<label for="job"><input type="checkbox" name="interest" id="job" value="Job History">Job History</label>
+					
+					<label for="avail"><input type="checkbox" name="interest" id="avail" value="Availability">Availability</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Referral Source</legend>
+					<label for="reference">How did you hear about me?</label>
+					<select name="reference" id="reference">
+						<option value="ad">Job Application</option>
+						<option value="friend">Monster.com</option>
+						<option value="google">LinkedIn</option>
+						<option value="other">Other</option>
+					</select>
+					
+					<label for="questions">Questions?</label>
+					<textarea id="questions" name="questions" rows="5" cols="25"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="Submit" class="btn">
+				
+			</form>
+
+	</main>
+	
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+		<div class="copyright">
+			<p><a href="mailto:lhumkey0001@kctcs.edu">lhumkey0001@kctcs.edu</a></p>
+			<p>&copy; 2024 John Humkey</p>
+		</div>
+
+		<div class="social">
+			<a href="https://www.linkedin.com" target="_blank"><img src="images/white-linkedin-logo.png" alt="white linkedin logo" width="40" ></a>
+		</div>
+	</footer>
+
+	<script src="scripts/script.js"></script>
+	
+</body>
+</html>
